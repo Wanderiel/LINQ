@@ -10,11 +10,11 @@ namespace LINQ01
             List<Criminal> criminals = new List<Criminal>()
             {
                 new Criminal("Петров Александр Викторович", "кража"),
-                new Criminal("Сальваторе «Тури» Джулиано", "убийство"),
+                new Criminal("Сальваторе «Тури» Джулиано", "антиправительственное"),
                 new Criminal("Эрибе́рто Ласка́но Ласкано", "кража"),
                 new Criminal("Давуд Ибрагим", "убийство"),
                 new Criminal("Джон Герберт Диллинджер", "поджог"),
-                new Criminal("Педро Родригес Фильо", "поджог"),
+                new Criminal("Педро Родригес Фильо", "антиправительственное"),
             };
 
             Jail jail = new Jail(new List<Criminal>(criminals));
@@ -22,7 +22,7 @@ namespace LINQ01
             jail.ShowPrisoners();
             Console.WriteLine();
 
-            string crimeAmnesty = "кража";
+            string crimeAmnesty = "Антиправительственное";
             jail.ReleaseOnAmnesty(crimeAmnesty);
 
             jail.ShowPrisoners();
@@ -53,7 +53,7 @@ namespace LINQ01
             Console.WriteLine($"Объявлена амнистия по преступлению: {crimeAmnesty}");
 
             var result = from Criminal criminal in _criminals
-                         where criminal.Crime != crimeAmnesty
+                         where criminal.Crime.ToLower() != crimeAmnesty.ToLower()
                          select criminal;
 
             _criminals = new List<Criminal>(result);
