@@ -1,8 +1,6 @@
 ﻿//GlobalUsing
 //Net v.6
 
-using System.Linq;
-
 namespace LINQ01
 {
     internal class Program
@@ -47,7 +45,7 @@ namespace LINQ01
             Console.WriteLine("В заключении:");
 
             foreach (Criminal criminal in _criminals)
-                Console.WriteLine($"{criminal.FullName} [{criminal.Crime}]");
+                criminal.ShowInfo();
         }
 
         public void ReleaseOnAmnesty(string crimeAmnesty)
@@ -72,6 +70,8 @@ namespace LINQ01
 
         public string FullName { get; }
         public string Crime { get; }
-    }
 
+        public void ShowInfo() =>
+            Console.WriteLine($"{FullName} [{Crime}]");
+    }
 }
