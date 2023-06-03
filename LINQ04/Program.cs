@@ -1,7 +1,7 @@
 ﻿//GlobalUsing
 //Net v.6
 
-namespace LINQ03
+namespace LINQ04
 {
     internal class Program
     {
