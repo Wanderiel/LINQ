@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ05", "LINQ05\LINQ05.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ06", "LINQ06\LINQ06.csproj", "{5A04BD79-24B4-44B5-B35F-C29CDB7B82DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ07", "LINQ07\LINQ07.csproj", "{1EF31FBA-DFAA-42AE-AF7F-93D48B8CA1FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{5A04BD79-24B4-44B5-B35F-C29CDB7B82DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A04BD79-24B4-44B5-B35F-C29CDB7B82DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A04BD79-24B4-44B5-B35F-C29CDB7B82DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EF31FBA-DFAA-42AE-AF7F-93D48B8CA1FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EF31FBA-DFAA-42AE-AF7F-93D48B8CA1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EF31FBA-DFAA-42AE-AF7F-93D48B8CA1FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EF31FBA-DFAA-42AE-AF7F-93D48B8CA1FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
